@@ -36,7 +36,7 @@ public sealed class AICommandWindow : EditorWindow
     void RunGenerator()
     {
         var code = OpenAIUtil.InvokeChat(WrapPrompt(_prompt));
-        Debug.Log("AI command script:\n" + code);
+        Debug.Log("AI command script:" + code);
         CreateScriptAsset(code);
     }
 
